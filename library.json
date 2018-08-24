@@ -1,0 +1,25 @@
+{
+    "name": "LWMQTT library for ESP32 (ESP-IDF)",
+    "keywords": "LWMQTT, esp32, esp-idf, espressif",
+    "description": "Library for work with  LWMQTT protocol.",
+    "authors": {
+        "name": "Andrey Mitrokhin",
+        "email": "andrey@mitrokhin.ru",
+        "url": "http://mitrokhin.ru",
+        "maintainer": true
+    },
+    "build": {
+        "flags": [
+            "-D CONFIG_ESP_MQTT_TASK_STACK_SIZE=4096",
+            "-D CONFIG_ESP_MQTT_TASK_STACK_PRIORITY=5",
+            "-D CONFIG_ESP_MQTT_EVENT_QUEUE_SIZE=64"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Andrey-m/LWMQTT-lib-for-esp-idf.git"
+    },
+    "version": "1.0.0",
+    "frameworks": "espidf",
+    "platforms": "espressif32"
+}
